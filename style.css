@@ -252,6 +252,10 @@ footer {
   color: var(--green-main);
 }
 
+.community {
+  padding: 0;
+}
+
 .docs {
   background-color: var(--brown-bg-color)
 }
@@ -300,8 +304,6 @@ footer {
 
 .community-description p {
   padding-top: 0;
-  margin: 0;
-  padding: 0;
 }
 
 .community-description p img {
@@ -451,11 +453,21 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media all and (max-width: 1150px) {
+@media all and (max-width: 1000px) {
   .community-info {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .community-description p {
+    padding: 0;
+    font-size: 1.1em;
+  }
+
+  .community-description p img {
+    width: 10em;
+    border-radius: .25em;
   }
 }
 
