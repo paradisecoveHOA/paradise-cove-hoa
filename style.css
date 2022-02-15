@@ -173,6 +173,7 @@ footer {
 .body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -329,7 +330,7 @@ footer {
 }
 
 .community-contacts {
-  flex: 1;
+  flex: 1.5;
 }
 
 .community-contacts ul {
@@ -449,6 +450,14 @@ footer {
 
 
 /* MEDIA QUERIES */
+
+@media all and (max-width: 1150px) {
+  .community-info {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 
 @media all and (max-width: 750px) {
   /* MOBILE  */
