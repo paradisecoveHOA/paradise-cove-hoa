@@ -466,10 +466,14 @@ footer {
   }
 
   .community-description p img {
-    width: 10em;
     border-radius: .25em;
+    float: none;
+    display: block;
+    width: 10em;
+    margin: 0;
   }
 }
+  
 
 @media all and (max-width: 750px) {
   /* MOBILE  */
@@ -499,7 +503,7 @@ footer {
     margin: 1rem 0 1rem 0;
   }
 
-  .docs, .map, footer {
+  .docs, .community-info, .map, footer {
     padding: 1rem;
   }
 
@@ -510,6 +514,12 @@ footer {
 }
 
 @media all and (max-width: 480px) {
+
+  .community-description p img {
+    padding-bottom: 1em;
+    width: 100%;
+  }
+
   .welcome-content-mainheading,
   .photos-content-mainheading {
     font-size: 1.5rem;
@@ -527,4 +537,5 @@ footer {
   .docs-category > ul li {
     font-size: .8rem;  
   }
+  
 }
